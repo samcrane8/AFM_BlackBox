@@ -33,6 +33,8 @@ module mojo_top(
   wire [3:0] sample_channel;
   
   wire [7:0] tx_data;
+  wire new_tx_data;
+  wire [9:0] processed_data;
    
   avr_interface avr_interface (
     .clk(clk),
@@ -50,7 +52,7 @@ module mojo_top(
     .sample(sample),
     .sample_channel(sample_channel),
     .tx_data(tx_data),
-    .new_tx_data(1'b0),
+    .new_tx_data(new_tx_data),
     .tx_busy(),
     .tx_block(avr_rx_busy),
     .rx_data(),
@@ -77,7 +79,9 @@ module mojo_top(
     .channel(channel),
     .new_sample(new_sample),
     .sample(sample),
-    .sample_channel(sample_channel)
+    .sample_channel(sample_channel),
+	 .processed_data(processed_data)
   );
+  
    
 endmodule

@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-SAMUELBRUCE8DEF::  Sun Oct 25 14:31:53 2015
+SAMUELBRUCE8DEF::  Sun Oct 25 22:03:47 2015
 
 par -w -intstyle ise -ol high -mt off mojo_top_map.ncd mojo_top.ncd
 mojo_top.pcf 
@@ -100,7 +100,7 @@ Phase  1  : 344 unrouted;      REAL time: 3 secs
 
 Phase  2  : 281 unrouted;      REAL time: 3 secs 
 
-Phase  3  : 95 unrouted;      REAL time: 3 secs 
+Phase  3  : 95 unrouted;      REAL time: 4 secs 
 
 Phase  4  : 95 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 4 secs 
 
