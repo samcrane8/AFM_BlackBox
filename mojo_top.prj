@@ -1,0 +1,8 @@
+verilog work "spi_slave.v"
+verilog work "serial_tx.v"
+verilog work "serial_rx.v"
+verilog work "pwm.v"
+verilog work "cclk_detector.v"
+verilog work "input_capture.v"
+verilog work "avr_interface.v"
+verilog work "mojo_top.v"

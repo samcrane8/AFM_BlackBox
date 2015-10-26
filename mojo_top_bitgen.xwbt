@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=Z:\Documents\Georgia Tech\Freshman Year\Research\ISE_Workspaces\AFM_BlackBox\mojo_top.ncd
+OUTFILE=Z:\Documents\Georgia Tech\Freshman Year\Research\ISE_Workspaces\AFM_BlackBox\mojo_top.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=Z:\Documents\Georgia Tech\Freshman Year\Research\ISE_Workspaces\AFM_BlackBox
+LICENSE=WebPack
+USER_INFO=211096163_0_0_217

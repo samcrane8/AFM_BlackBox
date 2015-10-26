@@ -1,0 +1,158 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: mojo_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mojo_top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "mojo_top"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : mojo_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "\\psf\home\Documents\Georgia Tech\Freshman Year\Research\ISE_Workspaces\AFM_BlackBox\spi_slave.v" into library work
+Parsing module <spi_slave>.
+Analyzing Verilog file "\\psf\home\Documents\Georgia Tech\Freshman Year\Research\ISE_Workspaces\AFM_BlackBox\serial_tx.v" into library work
+Parsing module <serial_tx>.
+INFO:HDLCompiler:693 - "\\psf\home\Documents\Georgia Tech\Freshman Year\Research\ISE_Workspaces\AFM_BlackBox\serial_tx.v" Line 14. parameter declaration becomes local in serial_tx with formal parameter declaration list
+Analyzing Verilog file "\\psf\home\Documents\Georgia Tech\Freshman Year\Research\ISE_Workspaces\AFM_BlackBox\serial_rx.v" into library work
+Parsing module <serial_rx>.
+INFO:HDLCompiler:693 - "\\psf\home\Documents\Georgia Tech\Freshman Year\Research\ISE_Workspaces\AFM_BlackBox\serial_rx.v" Line 12. parameter declaration becomes local in serial_rx with formal parameter declaration list
+Analyzing Verilog file "\\psf\home\Documents\Georgia Tech\Freshman Year\Research\ISE_Workspaces\AFM_BlackBox\pwm.v" into library work
+Parsing module <pwm>.
+Analyzing Verilog file "\\psf\home\Documents\Georgia Tech\Freshman Year\Research\ISE_Workspaces\AFM_BlackBox\cclk_detector.v" into library work
+Parsing module <cclk_detector>.
+INFO:HDLCompiler:693 - "\\psf\home\Documents\Georgia Tech\Freshman Year\Research\ISE_Workspaces\AFM_BlackBox\cclk_detector.v" Line 10. parameter declaration becomes local in cclk_detector with formal parameter declaration list
+Analyzing Verilog file "\\psf\home\Documents\Georgia Tech\Freshman Year\Research\ISE_Workspaces\AFM_BlackBox\input_capture.v" into library work
+Parsing module <input_capture>.
+Analyzing Verilog file "\\psf\home\Documents\Georgia Tech\Freshman Year\Research\ISE_Workspaces\AFM_BlackBox\avr_interface.v" into library work
+Parsing module <avr_interface>.
+INFO:HDLCompiler:693 - "\\psf\home\Documents\Georgia Tech\Freshman Year\Research\ISE_Workspaces\AFM_BlackBox\avr_interface.v" Line 80. parameter declaration becomes local in avr_interface with formal parameter declaration list
+Analyzing Verilog file "\\psf\home\Documents\Georgia Tech\Freshman Year\Research\ISE_Workspaces\AFM_BlackBox\mojo_top.v" into library work
+Parsing module <mojo_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <mojo_top>.
+
+Elaborating module <avr_interface>.
+
+Elaborating module <cclk_detector(CLK_RATE=50000000)>.
+
+Elaborating module <spi_slave>.
+
+Elaborating module <serial_rx(CLK_PER_BIT=100)>.
+
+Elaborating module <serial_tx(CLK_PER_BIT=100)>.
+
+Elaborating module <input_capture>.
+
+Elaborating module <pwm(CTR_LEN=10)>.
+ERROR:HDLCompiler:1654 - "\\psf\home\Documents\Georgia Tech\Freshman Year\Research\ISE_Workspaces\AFM_BlackBox\mojo_top.v" Line 68: Instantiating <data_processor> from unknown module <data_processor>
+Module mojo_top remains a blackbox, due to errors in its contents
+WARNING:HDLCompiler:1499 - "\\psf\home\Documents\Georgia Tech\Freshman Year\Research\ISE_Workspaces\AFM_BlackBox\mojo_top.v" Line 1: Empty module <mojo_top> remains a black box.
+--> 
+
+Total memory usage is 154228 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
